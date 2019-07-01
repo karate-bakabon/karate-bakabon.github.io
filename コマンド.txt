@@ -1,0 +1,18 @@
+
+cd PG
+cd my-git
+git add sample.txt
+git status
+git commit -m "メッセージ"
+git push -u origin master
+
+
+
+
+フォルダごと
+cd PG
+cd my-git
+git add .
+git commit -m "test"
+git push -u origin master
+
