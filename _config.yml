@@ -1,21 +1,21 @@
 ### Site info:
-title: Freshman21
-tagline: Another Jekyll theme, Freshman twenty-first
-author: Lijia Yu
+title: 明晰夢が見たい-tmp
+tagline: 夢日記をつけて明晰夢を見る
+author: z
 email: yu@lijiayu.net
 description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
-keywords: "Jekyll, theme, Freshman21"
+keywords: "夢日記, 明晰夢, 夢占い"
 baseurl: "/karate-bakabon.github.io" # the subpath of your site, e.g. /blog/
-url: "https://karate-bakabon.github.io/" # the base hostname & protocol for your site
+url: "https://karate-bakabon.github.io" # the base hostname & protocol for your site
 locale: en_US
 
 ### Personal info and site tools info:
-twitter_username: yulijia
+twitter_username: barazou
 github_username:  yulijia
 disqus_shortname: freshman21
 favicon:     "/images/favicon.ico"
-aboutme: Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it. # these are shown on aboutme-sidebar.
-aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg# your photo.
+aboutme: 野良プログラマー # these are shown on aboutme-sidebar.
+aboutme_photo: https://karate-bakabon.github.io/diary/images/cat.jpg
 google_analytics_key: UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
 
@@ -176,7 +176,7 @@ Blogroll:
       - name: Freshman
         href: http://yulijia.net/freshman
         title: Another Jekyll blog theme
-      - name: author's website
+      - name: 
         href: http://yulijia.net/
         title: Lijia Yu's website
 
