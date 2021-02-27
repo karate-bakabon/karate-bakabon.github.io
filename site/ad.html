@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 itemprop="name" class="post-title">{{ page.title }}</h1>
+    <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
+    <p class="post-meta">
+    {{ site.locales[site.default_locale].PostedInCategories }}
+    {% for cat in page.categories %}
+    <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>{% unless page.categories.last == cat %}, {% endunless %}
+    {% endfor %} 
+    {% if page.tags != empty %}
+    {{ site.locales[site.default_locale].Taggedwith }}
+    {% for tag in page.tags %}
+    <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
+    {% endfor %}
+    {% endif %}
+    <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}
+    </time>
+    </p>
+  </header>
+
+  <article class="post-content" itemprop="articleBody">
+    {{ content }}
+  </article>
+  <hr />
+</div>
+
+
+{% include page_pagination.html%}
+<!--{% include comments.html %}-->
+
+<!--楽天の広告-->
+<script type="text/javascript">rakuten_design="slide";rakuten_affiliateId="191b3a92.d896f8f1.191b3a93.7eab5afc";rakuten_items="ctsmatch";rakuten_genreId="0";rakuten_size="336x280";rakuten_target="_blank";rakuten_theme="gray";rakuten_border="off";rakuten_auto_mode="on";rakuten_genre_title="off";rakuten_recommend="on";rakuten_ts="1567406501260";</script><script type="text/javascript" src="https://xml.affiliate.rakuten.co.jp/widget/js/rakuten_widget.js"></script>
